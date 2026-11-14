@@ -1,0 +1,14 @@
+name = "imdb-scraper"
+compatibility_date = "2024-03-01"
+main = "src/index.js"
+workers_dev = true
+
+[build]
+upload.format = "modules"
+upload.main = "./src/index.js"
+
+[build.upload]
+dir = "./src"
+
+[vars]
+CACHE_TTL = "21600" # 6 hours in seconds
